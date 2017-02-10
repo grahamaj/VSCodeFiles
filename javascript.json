@@ -73,7 +73,7 @@
   "Q simple then block": {
     "prefix": "qt",
     "body": [".then(() => $0)"]
-  },,
+  },
   "Q then block": {
     "prefix": "qtf",
     "body": [
@@ -89,7 +89,7 @@
   "Q simple catch block": {
     "prefix": "qc",
     "body": [".catch(() => $0)"]
-  },,
+  },
   "Q catch block": {
     "prefix": "qcf",
     "body": [
