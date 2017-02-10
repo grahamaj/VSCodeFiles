@@ -1,0 +1,22 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.rulers": [ 80, 120 ],
+    "files.trimTrailingWhitespace": true,
+    "files.eol": "\n",
+    "cSpell.userWords": [
+      "dismissable",
+      "selectable",
+      "ngdoc",
+      "ATARS",
+      "transclude",
+      "prelink",
+      "mkdirp",
+      "validators",
+      "Impl"
+    ],
+  "workbench.activityBar.visible": true,
+  "workbench.editor.tabCloseButton": "off"
+}

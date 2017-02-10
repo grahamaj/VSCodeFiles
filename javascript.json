@@ -1,0 +1,101 @@
+{
+/*
+	 // Place your snippets for JavaScript here. Each snippet is defined under a snippet name and has a prefix, body and
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	 // same ids are connected.
+	 // Example:
+	 "Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+  "Express middleware function": {
+    "prefix": "fm",
+    "body": [
+      "function ${1:name}(req, res) {",
+      "  $0",
+      "}"
+    ]
+  },
+  "Express middleware function with next": {
+    "prefix": "fmn",
+    "body": [
+      "function ${1:name}(req, res, next) {",
+      "  $0",
+      "}"
+    ]
+  },
+  "Express middleware function error handler": {
+    "prefix": "fmerr",
+    "body": [
+      "function ${1:name}(err, req, res, next) {",
+      "  $0",
+      "}"
+    ]
+  },
+  "Express route middleware": {
+    "prefix": "rm",
+    "body": [
+      "function ${3:fnName} (req, res) {",
+      "  $0",
+      "}",
+      "",
+      "/**",
+      " * @api {${1:method}} ${2:path}",
+      " * @apiVersion 3.0.0",
+      " * @apiName",
+      " * @apiGroup",
+      " * @apiDescription",
+      " */",
+      "router.${1:method}(\"${2:path}\", ${3:fnName});"
+    ]
+  },
+  "Express route middleware function": {
+    "prefix": "rmf",
+    "body": [
+      "/**",
+      " * @api {${1:method}} ${2:path}",
+      " * @apiVersion 3.0.0",
+      " * @apiName",
+      " * @apiGroup",
+      " * @apiDescription",
+      " */",
+      "router.${1:method}(\"${2:path}\", function (req, res) {",
+      "  $0",
+      "});"
+    ]
+  },
+  "Q simple then block": {
+    "prefix": "qt",
+    "body": [".then(() => $0)"]
+  },,
+  "Q then block": {
+    "prefix": "qtf",
+    "body": [
+      ".then(() => {",
+      "  $0",
+      "})"
+    ]
+  },
+  "Q catch with next": {
+    "prefix": "qcn",
+    "body": [".catch(next);"]
+  },
+  "Q simple catch block": {
+    "prefix": "qc",
+    "body": [".catch(() => $0)"]
+  },,
+  "Q catch block": {
+    "prefix": "qcf",
+    "body": [
+      ".catch(() => {",
+      "  $0",
+      "})"
+    ]
+  }
+}
